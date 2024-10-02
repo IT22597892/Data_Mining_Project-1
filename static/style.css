@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #444;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px; /* Reduced the bottom margin */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #6a11cb;
+    background-color: #f0f0ff;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.4);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #28a745, #218838);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(to right, #218838, #28a745);
+    box-shadow: 0 8px 20px rgba(33, 136, 56, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Form Spacing */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced the gap between form elements */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}
