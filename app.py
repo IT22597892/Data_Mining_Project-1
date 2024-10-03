@@ -1,10 +1,10 @@
 import streamlit as st
-import pickle
+import joblib
 import pandas as pd
 
 # Load the trained model
-with open('model.pkl', 'rb') as model_file:
-    model_pipeline = pickle.load(model_file)
+with open('model.joblib', 'rb') as model_file:
+    model_pipeline = joblib.load(model_file)
 
 # Title of the app
 st.title("Term Deposit Subscription Prediction")
@@ -55,7 +55,3 @@ if st.button("Predict"):
 
     # Display result
     st.success(f"Will the client subscribe to a term deposit? {result}")
-
-    import sklearn
-print(sklearn.__version__)
-
